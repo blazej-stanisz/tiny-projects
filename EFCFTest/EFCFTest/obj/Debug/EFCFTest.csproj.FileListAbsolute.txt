@@ -1,0 +1,10 @@
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EFCFTest.exe.config
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\obj\Debug\EFCFTest.csprojResolveAssemblyReference.cache
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EFCFTest.exe
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EFCFTest.pdb
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EntityFramework.dll
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EntityFramework.xml
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\obj\Debug\EFCFTest.exe
+c:\users\staniszx\documents\visual studio 2015\Projects\EFCFTest\EFCFTest\obj\Debug\EFCFTest.pdb
