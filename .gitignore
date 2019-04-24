@@ -1,0 +1,6 @@
+.vs
+obj
+bin
+/SeleniumTest/output
+/SeleniumTest/packages
+
