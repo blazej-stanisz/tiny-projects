@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center pt-5 text-secondary">
+    <h1 class="display-5">Network location checker</h1>
+    <p>Check using: <b>@ViewData["CheckUsingDomainAccount"]</b></p>
+</div>
+<div class="pt-4 text-secondary">
+    <label for="pathInput">Enter network path:</label>
+    <div class="form-row">
+        <div class="col-md-11 mb-11">
+            <input type="text" class="form-control" id="pathInput" placeholder="Paste path here and press Enter...">
+
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                No access to this file/location or path is invalid!
+            </div>
+        </div>
+        <div class="col-md-1 mb-1">
+            <button id="pasteButton" type="button" class="btn btn-primary">paste</button>
+            <button id="checkButton" type="button" class="btn btn-secondary">check</button>
+        </div>
+    </div>
+</div>
+
+<div class="text-center pt-5" id="loadingSpinner">
+    <div class="spinner-border text-info" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div>Checking, please wait...</div>
+</div>
