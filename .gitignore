@@ -4,3 +4,4 @@ bin
 /SeleniumTest/output
 /SeleniumTest/packages
 packages
+/CheckNetworkLocation/Logs
