@@ -14,16 +14,16 @@ $checkButton.hide();
 $loadingSpinner.hide();
 
 // bind events
-$pasteButton.on("click", function () { pasteAndCheck() });
-$checkButton.on("click", function () { checkPath() });
-$pathInput.on('keyup', function (e) { if (e.keyCode === 13) { checkPath(); } });
+$pasteButton.on("click", function () { pasteAndCheck(); });
+$checkButton.on("click", function () { checkPath(); });
+$pathInput.on('keyup', function (e) { if (e.keyCode === 13) { checkLocation(); }});
 
 // functions
-function checkPath() {
+function checkLocation() {
     clearPathInput();
 
     $.ajax({
-        url: 'Home/SomeAction',
+        url: getActionUrl('Home','CheckLocation'),
         data: { inputText: $pathInput.val() },
         beforeSend: function () {
             showLoadingSpinner(true);
@@ -52,8 +52,16 @@ function showLoadingSpinner(show) {
     $loadingSpinner.toggle(show);
 }
 
+function removeTrailingSlash(url) {
+    return url.replace(/\/$/, "");
+} 
+
+function getActionUrl(controller, action) {
+    return `${removeTrailingSlash(window.location.href)}/${controller}/${action}`;
+}
+
 async function pasteAndCheck() {
     const text = await navigator.clipboard.readText();
     $pathInput.val(text);
-    checkPath();
+    checkLocation();
 }
