@@ -10,12 +10,12 @@ var $pasteButton = $("#pasteButton");
 var $checkButton = $("#checkButton");
 
 // onReady actions
-$checkButton.hide();
+//$checkButton.hide();
 $loadingSpinner.hide();
 
 // bind events
 $pasteButton.on("click", function () { pasteAndCheck(); });
-$checkButton.on("click", function () { checkPath(); });
+$checkButton.on("click", function () { checkLocation(); });
 $pathInput.on('keyup', function (e) { if (e.keyCode === 13) { checkLocation(); }});
 
 // functions
@@ -62,6 +62,6 @@ function getActionUrl(controller, action) {
 
 async function pasteAndCheck() {
     const text = await navigator.clipboard.readText();
-    $pathInput.val(text);
+    $pathInput.val(text.trim());
     checkLocation();
 }
